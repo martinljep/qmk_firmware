@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT      mboard
 
 /* key matrix size */
-#define MATRIX_ROWS 2
+#define MATRIX_ROWS 3
 #define MATRIX_COLS 3
 
 /*
@@ -40,8 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { D0, D4 }
-#define MATRIX_COL_PINS { D1, F4, F5 }
+#define MATRIX_COL_PINS { D0, D4, D7 }
+#define MATRIX_ROW_PINS { D1, F4, F5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -49,6 +49,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
+
+/*Rotary encoder */
+#define ENCODERS_PAD_A { B4 }
+#define ENCODERS_PAD_B { B5 }
 
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
