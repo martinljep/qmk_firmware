@@ -53,6 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*Rotary encoder */
 #define ENCODERS_PAD_A { B4 }
 #define ENCODERS_PAD_B { B5 }
+#define ENCODER_DIRECTION_FLIP //flips the direction of the encoder. remove if not neded
 
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
